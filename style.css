@@ -1,0 +1,102 @@
+/* 2. Estilo para o corpo da página (body) */
+body {
+    /* Mude a cor de fundo */
+    background-color: #f0f2f5; /* Um cinza claro suave */
+    
+    /* Centralize o conteúdo do cartão na página */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;       /* Garante que o body ocupe toda a altura da viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 3. Estilize o elemento Cartão */
+.cartao {
+    /* Defina uma largura razoável */
+    width: 300px;
+    /* Altura será automática, se necessário, use: height: 450px; */
+    background-color: #ffffff;
+    
+    /* Aplique uma borda suave (box-shadow) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Defina um preenchimento interno */
+    padding: 25px;
+    
+    /* Centralize o texto dentro do cartão */
+    text-align: center;
+    
+    /* Arredonde os cantos */
+    border-radius: 12px;
+}
+
+/* 4. Estilize os demais elementos */
+
+/* Imagem */
+.cartao img {
+    /* Arredonda a imagem (para deixá-la circular ou com cantos suaves) */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    margin-bottom: 15px;
+    border: 3px solid #007bff; /* Borda colorida para destacar */
+}
+
+/* Título (Nome) */
+.cartao h1 {
+    color: #333333; /* Cor escura */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Parágrafo (Profissão/Interesse) */
+.cartao .profissao {
+    color: #007bff; /* Cor de destaque */
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Separador */
+.cartao hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Subtítulo da Lista */
+.cartao h2 {
+    color: #555555;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Lista */
+.cartao ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens da Lista */
+.cartao ul li {
+    background-color: #e9ecef; /* Cor de fundo suave para cada item */
+    color: #495057;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.cartao ul li:hover {
+    background-color: #ced4da;
+}
